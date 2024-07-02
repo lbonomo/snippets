@@ -1,0 +1,22 @@
+:root {
+  /* Colors */
+  --blue: #0626ee;
+  --blue-dark: #000C5C;
+  --blue-light: #00C6EF;
+  --chicle: #EB6BFF;
+  --white: #ffffff;
+  --black: #2c2c2c;
+  --light: #eaeaea;
+ 
+  /* Fonts */
+  --font-primary: "Roboto Flex", sans-serif; 
+  --font-header: "Roboto Flex", sans-serif;
+
+  /* Layout */
+  --max-width: 1128px;
+  
+  /* Breakpoints */
+  /* --media-small: 600px;
+  --media-medium: 768px;
+  --media-large: 1200px; */
+}

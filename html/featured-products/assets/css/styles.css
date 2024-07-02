@@ -1,0 +1,14 @@
+/**
+* Set, colores, fuentes y puntos de quiebres.
+*/
+
+@import url("./fonts.css");
+@import url("./vars.css");
+@import url("./featured-products.css");
+
+/* Layout */
+
+body {
+	margin: 0;
+}
+

@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
+
+body,
+button,
+input,
+textarea {
+  color:var(--black);
+  font-family:var(--font-primary) !important;
+  line-height: 1.618em !important;
+  text-rendering:optimizeLegibility !important;
+  font-weight:400;
+}
