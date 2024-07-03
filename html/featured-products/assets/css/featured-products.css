@@ -10,9 +10,8 @@ div.featured-products>div.content {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	padding: 2rem;
+	padding: 1rem;
 }
-
 
 div.featured-products>div.content>div:first-child {
 	display: flex;
@@ -26,6 +25,7 @@ div.featured-products>div.content>div:first-child img {
 	display: none;
 }
 
+
 div.featured-products>div.content>div:first-child h2 {
 	font-size: 3rem;
 	line-height: 1.4;
@@ -38,7 +38,7 @@ div.featured-products>div.content>div:first-child h2 {
 	text-shadow: 0px 0px 5px black;
 }
 
-
+/* 
 div.featured-products>div.content>div ul {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -56,9 +56,9 @@ div.featured-products>div.content>div ul li {
 	margin: 0;
 	transition: 300ms;
 }
-
+*/
 div.featured-products>div.content>div ul li:hover {
-	scale: 1.05;
+	/* scale: 1.05; */
 }
 
 div.featured-products>div.content>div ul li a {
@@ -109,6 +109,90 @@ div.featured-products>div.content>div ul li a h3 {
 	padding: 0;
 	line-height: 1.2em;
 }
+
+/****/
+
+/**
+* Set, colores, fuentes y puntos de quiebres.
+*/
+
+@import url("./fonts.css");
+@import url("./vars.css");
+@import url("./featured-products.css");
+
+/* Layout */
+
+body {
+	margin: 0;
+}
+
+body {
+  margin: 0;
+  position: relative;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding-bottom: 64px;
+}
+
+.carousel-container {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  overflow-x: auto;
+  display: flex;
+  width: 100%;
+  gap: 20px;
+  align-items: center;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel-container::-webkit-scrollbar {
+  height: 14px;
+  width: calc(100% - 48px);
+}
+
+.carousel-container::-webkit-scrollbar-track {
+  background: #b1b3b399;
+}
+
+.carousel-container::-webkit-scrollbar-thumb {
+  background: #29AB87;
+}
+
+.carousel-container::-webkit-scrollbar-track-piece:start {
+  background: #29AB87;
+}
+
+.carousel-slide {
+  flex: 1 0 30%;
+  aspect-ratio: 1;
+  flex-flow: column nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  scroll-snap-align: center;
+  background-color: #fff;
+  border: 1px solid var(--black);
+  border-radius: 10px;
+  padding: 10px;
+  margin: 0;
+  transition: 300ms;
+}
+
+@media (max-width: 600px) {
+  .carousel-slide {
+    flex: 1 0 90%;
+  }
+}
+
+
+
+/****/
 
 /** Tablet **/
 @media (min-width: 768px) {
